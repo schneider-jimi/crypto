@@ -80,6 +80,10 @@ export default function UpdateInfo() {
       setuserdata(json);
     };
     fetchuserdata();
+<<<<<<< HEAD
+=======
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+>>>>>>> 5c82861 (crypto/update)
   }, []);
 
   console.log(userdata);

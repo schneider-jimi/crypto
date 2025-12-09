@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 import axios from "axios";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import Nav from "../Nav";
 import { useLocation, useParams } from "react-router-dom";
+=======
+import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+>>>>>>> 5c82861 (crypto/update)
 import { useRef } from "react";
 import CoinInfo from "./CoinInfo";
 
@@ -44,7 +50,11 @@ export default function Details({ open }) {
       ) {
         new window.TradingView.widget({
           autosize: true,
+<<<<<<< HEAD
           symbol: "BITSTAMP:" + `${state.value.symbol}` + "USD",
+=======
+          symbol: `BITSTAMP:${state.value.symbol}USD`,
+>>>>>>> 5c82861 (crypto/update)
           interval: "D",
           timezone: "Asia/Kolkata",
           theme: "dark",
@@ -61,6 +71,7 @@ export default function Details({ open }) {
         });
       }
     }
+<<<<<<< HEAD
   }, []);
 
   //-------------------------------------chart---------------------------------------
@@ -68,6 +79,9 @@ export default function Details({ open }) {
   useEffect(() => {
     // console.log(state);
   }, [state]);
+=======
+  }, [state.value.symbol]);
+>>>>>>> 5c82861 (crypto/update)
   // const {coin}=location.state;
 
 

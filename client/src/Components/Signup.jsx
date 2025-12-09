@@ -7,8 +7,11 @@ export default function Signup({ closemod }) {
     setcredentials({ ...credentials, [e.target.name]: e.target.value });
   };
 
+<<<<<<< HEAD
   const [loggedin, setloggedin] = useState(false);
 
+=======
+>>>>>>> 5c82861 (crypto/update)
   const eventHandler = async () => {
     const body = {
       email: credentials.email,
@@ -24,7 +27,11 @@ export default function Signup({ closemod }) {
     //  const json=response.json();
     const data = await response.text();
     //  console.log(data);
+<<<<<<< HEAD
     if (data == "No such user found") {
+=======
+    if (data === "No such user found") {
+>>>>>>> 5c82861 (crypto/update)
       alert("No such user found");
     } else {
       closemod[1](false);

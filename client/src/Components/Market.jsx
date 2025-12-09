@@ -1,10 +1,16 @@
 import React from "react";
+<<<<<<< HEAD
 import Nav from "./Nav";
+=======
+>>>>>>> 5c82861 (crypto/update)
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import Footer from "./Footer";
+=======
+>>>>>>> 5c82861 (crypto/update)
 
 export default function Market() {
   const url =
@@ -15,6 +21,7 @@ export default function Market() {
   useEffect(() => {
     axios
       .get(url, {
+<<<<<<< HEAD
         AccessControlAllowMethods: "GET, DELETE, HEAD, OPTIONS",
         headers: {
           "Content-Type": "application/json",
@@ -23,6 +30,12 @@ export default function Market() {
         AccessControlAllowOrigin: "*",
 
         headers: { "Content-Type": "application/json" },
+=======
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+>>>>>>> 5c82861 (crypto/update)
       })
       .then((response) => {
         setinfo(response.data);

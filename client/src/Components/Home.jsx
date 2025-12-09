@@ -2,7 +2,10 @@ import React from "react";
 import Footer from "./Footer";
 import List from "./List";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import Typed from "react-typed";
+=======
+>>>>>>> 5c82861 (crypto/update)
 import bg from "../Images/bg3.png";
 
 export default function Home() {

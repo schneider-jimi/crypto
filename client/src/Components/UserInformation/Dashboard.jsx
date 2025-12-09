@@ -1,6 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { useNavigate, useLocation, Link } from "react-router-dom";
+=======
+import { useNavigate, useLocation } from "react-router-dom";
+>>>>>>> 5c82861 (crypto/update)
 import ModalTransactions from "./ModalTransactions";
 
 export default function Dashboard() {
@@ -32,6 +36,10 @@ export default function Dashboard() {
   useEffect(() => {
     getallTransaction();
     getamount();
+<<<<<<< HEAD
+=======
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+>>>>>>> 5c82861 (crypto/update)
   }, []);
 
   console.log(allTransaction);
@@ -115,6 +123,10 @@ export default function Dashboard() {
       seturl(json.userProfile[0].url);
     };
     fetchuserdata();
+<<<<<<< HEAD
+=======
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+>>>>>>> 5c82861 (crypto/update)
   }, []);
 
   const [url, seturl] = useState("");

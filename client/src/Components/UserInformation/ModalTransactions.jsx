@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
+=======
+import React from "react";
+>>>>>>> 5c82861 (crypto/update)
 
 export default function ModalTransactions({ fun }) {
   console.log(fun.data);
